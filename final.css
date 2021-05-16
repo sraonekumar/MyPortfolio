@@ -1,0 +1,112 @@
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: #dcd9d9 1px 1px 5px 0px;
+}
+.inactive{
+  display: none;
+}
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+  color: #868686;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  background: #99e1d4;.
+}
+
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+}
+
+.date{
+  color: gray;
+  float: right;
+}
+h2 {
+  color: rgb(49, 147, 226);
+  font-weight: lighter;
+}
+h3,h4{
+  font-size: 18px;
+  font-weight: lighter;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+  
+.column {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+}
+
+.stick-bar {
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #dcd9d9;
+  text-align: left;
+  display: block;
+  box-shadow: #dcd9d9 1px 1px 5px 0px;
+}
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .myButton {
+    border-radius: 0px;
+    padding: 4px;
+    background: rgb(255, 255, 255);
+    border: none;
+    margin: 0px -4px;
+    box-shadow: #b8b8b8 0px 0px 2px 0px;
+    color: #7b7b7b;
+} 
+.myButton :hover{
+background: #99e1d4;
+}     
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-github {
+    background: #030303;
+    color: white;
+  }
+  .fa-instagram {
+    background:#f973ce;
+    color: white;
+  }
