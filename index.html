@@ -11,45 +11,53 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body style="color: rgb(61, 61, 61);">
+        
         <!--Heading-->
-        <div class ="nav" style="border-bottom: 1px solid #dcd9d9;">
-            <i class="fa fa-bars" aria-hidden="true" id="hamburger"></i>
-            <i class="fa fa-times  inactive" aria-hidden="true"></i>
-            <label style="font-size: 31px; font-weight: lighter;">Portfolio</label><br><br>
-            <ul id="navbar" style="display: none;">
+        <div class ="nav" id ="nav" style="border-bottom: 1px solid #dcd9d9;
+        position: fixed;
+        background: rgb(49, 147, 226);
+        width: 100%;
+        margin: 0px;
+        padding: inherit;top: 0;">
+            <i class="fa fa-bars" aria-hidden="true" id="hamburger" style ="color: rgb(255, 255, 255);"></i>
+            <i class="fa fa-times  inactive" aria-hidden="true" style="color: rgb(255, 255, 255);"></i>
+            <label style="font-size: 31px; font-weight: lighter; color: white;">MyPortfolio</label><br><br>
+            
+            
+            <ul id="navbar" style="display: none; top: 0;">
                 <li>
-                    <a href="#lead">Home</a>
+                    <a href="#home" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Home</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#home" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">About</a>
                 </li>
                 <li>
-                    <a href="#education">Education</a>
+                    <a href="#education" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Education</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Projects</a>
                 </li>
                 <li>
-                    <a href="#projects">Certifications</a>
+                    <a href="#certi" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Certifications</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Skills</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" onclick="$('#navbar').hide(); $('.fa-times,.fa-bars').toggle();">Contact</a>
                 </li>
             </ul>
         </div>
-            
        
-         
-        <div class="header">
-            <img src="dp.jpg" style="border-radius: 50%; width:150px">
+       
+        <div class="header" id ="home" style="margin-top: 100px;">
+            <img src="dp.png" style="border-radius: 50%; width:150px">
             <h1>Sravan Kumar Mallepoola</h1>
 
             <div class="stick-bar" align = "center">
                 <h3 style="color: rgb(49, 147, 226);">About Me</h3>
-                <p></p>
+                <p>I am an enthusiastic, self-motivated, reliable,responsible and hardworking person.
+                     I am a mature team worker and adaptable to all challenging situations . Interested in new technologies .</p>
                 
             </div><br>
             
@@ -62,14 +70,15 @@
         </div><br> 
         
         <!--block1-->
-        <div class ="column">
+        <div class ="column" id ="education">
             <h2>Education</h2>
         <div class="stick-bar" align = "center">
             <h3>Sree Vidyanikethan Engineering College</h3>
             <span class="date">July 2018 - Present</span>
             <h4>Bachelor of Technology in Computer Science</h4>
             <p>
-                Currently I am pursuing my Bachelors Degree in Computer Science (since 2018) at <b>Sree Vidyanikethan Engineering College,Tirupati</b>.
+                Currently I am pursuing my Bachelors Degree in Computer Science (since 2018) at 
+                <b>Sree Vidyanikethan Engineering College,Tirupati,India with a <b> CGPA 8.3 </b> </b>.
             </p>
             <p style="text-align:right;">
                 <a href="https://www.svec.education/home/" target="_blank" class="myButton">
@@ -82,18 +91,18 @@
             <h3>Sri Chaitanya Junior College</h3>
             <span class="date">June 2016 - April 2018</span>
             <h4>Intermediate Education</h4>
-            <p>I have Completed my Intermediate Education at <b>Sree Chaitanya Junior College,Vijayawada</b>.</p>
+            <p>I have Completed my Intermediate Education at <b>Sree Chaitanya Junior College,Vijayawada with a <b> Aggregate 94 % </b></b>.</p>
         </div> <br>
 
         <div class="stick-bar">
             <h3>Sree Valmeeki High School</h3>
             <span class="date">June 2015 - March 2016</span>
             <h4>Secondary Education</h4>
-            <p>I have Completed my Secondary Education at <b>Sree Valmeeki High School,Kadiri</b>.</p>
+            <p>I have Completed my Secondary Education at <b>Sree Valmeeki High School,Kadiri with a <b> GPA 9.7 </b></b>.</p>
         </div>
         </div><br>
         <!--block2-->
-        <div class ="column">
+        <div class ="column" id ="projects">
             <h2>Projects</h2>
             <div class="stick-bar">
                 <h3>Personal Portfolio Website</h3>
@@ -105,28 +114,31 @@
             </div>
         </div><br>
         <!--block3-->
-        <div class ="column">
+        <div class ="column" id ="skills">
             <h2>Skills</h2>
             <div class ="stick-bar">
-                <ul>
-                    <li>Operating Systems</li>
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>DBMS</li>
-                    <li>Algorithms</li>
-                    <li>C++</li>
-                    <li>Data Structures</li>
-                    <li>Git/Github</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>MS Office</li>
-                </ul>
+                <dl>
+                    <dt >Programming Languages. </dt>
+                    <dd>
+                        - C , C++ , Python , Java.
+                    </dd>
+                    <dt > Web-Technogies .</dt>
+                    <dd>
+                        - Html , Css , JavaScript .
+                    </dd>
+                    <dt > Others. </dt>
+                    <dd>
+                        - Knowledge On Git .
+                    </dd>
+                    <dd>
+                        - MySql
+                    </dd>
+                </dl>
             </div>
         </div> <br>
 
         <!--block4-->
-        <div class ="column">
+        <div class ="column" id="certi">
             
             <h2>Certifications</h2>
             <div class ="stick-bar">
@@ -150,7 +162,8 @@
             </div>
         </div>  <br>
 
-        <footer class ="column">
+        <footer class ="column" id="contact">
+            
             <p>
                 Copyright &copy; 2021 Sravan Kumar Mallepoola
             </p>
@@ -158,6 +171,10 @@
             <a href="#" class="fa fa-facebook"></a>
             <a href="https://github.com/sraonekumar" class="fa fa-github"></a>
             <a href="#" class="fa fa-instagram"></a>
+            <address>
+                <a href="mailto:msraonekumar@gmail.com" style="text-decoration: none;"> msraonekumar@gmail.com</a>
+                
+             </address>
             
 
         </footer>
